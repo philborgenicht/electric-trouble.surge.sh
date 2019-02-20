@@ -29,6 +29,8 @@ class App extends Component {
      newMessage.id = id
      newMessage.name = name
      newMessage.message = message
+     e.target.name.value=""
+     e.target.message.value=""
      await fetch('https://philborgassessment.herokuapp.com/messages/', {
       method: 'POST',
       body: JSON.stringify ({
@@ -44,6 +46,7 @@ class App extends Component {
     const response = await fetch('https://philborgassessment.herokuapp.com/messages/')
     const json = await response.json()
     this.setState({messages: json})
+
    }
 
    editMessage = async (e) => {

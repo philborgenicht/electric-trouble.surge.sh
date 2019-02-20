@@ -15,13 +15,13 @@ const Compose=(props)=>{
       <div class="form-group text-left">
         <label name="name" id="name" htmlFor="name" class="col-sm-2 control-label">Name</label>
         <div class="col-sm-12">
-          <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required/>
+          <input type="text" class="form-control" id="name" placeholder="Please enter your name" name="name" required/>
         </div>
       </div>
       <div class="form-group text-left">
         <label name="message" id="message" htmlFor="message" class="col-sm-2 control-label">Message</label>
         <div class="col-sm-12">
-          <textarea name="message" id="message" name="message" class="form-control" required></textarea>
+          <textarea name="message" id="message" name="message" class="form-control" placeholder="Please enter your message" required></textarea>
         </div>
       </div>
       <div class="form-group text-left">
